@@ -49,5 +49,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-#venv
+# venv
 .venv/
+
+# project
+/source/tokens.py
+capture/

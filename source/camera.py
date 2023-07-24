@@ -69,9 +69,16 @@ def capture_video(name: str, seconds: int):
     del(cam)
     return CAMERA_CAPTURE_SUCCESS, filename
 
+def remove(file_name: str):
+    os.remove(file_name)
+
 def check_folder():
     '''
     Проверка наличия папки для загрузки фото и видео
     '''
     if not os.path.exists(PATH_CAPTURED_FOLDER):
         os.mkdir(PATH_CAPTURED_FOLDER)
+
+
+if __name__ == '__main__':
+    pass
